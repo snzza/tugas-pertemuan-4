@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Aplikasi Kampus',
+      title: 'Aplikasi Mahasiswa',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         ),
         body: const Center(
           child: Text(
-            'Selamat Belajar Flutter!',
+            'Rico Adi Pratama',
             style: TextStyle(fontSize: 20),
           ),
         ),

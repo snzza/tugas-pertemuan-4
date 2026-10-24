@@ -6,7 +6,7 @@ void main() {
       (WidgetTester tester) async {
     await tester.pumpWidget(const MyApp());
 
-    expect(find.text('Belajar Flutter'), findsOneWidget);
+    expect(find.text('Dashboard Mahasiswa'), findsOneWidget);
     expect(find.text('Rico Adi Pratama'), findsOneWidget);
   });
 }

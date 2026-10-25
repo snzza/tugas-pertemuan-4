@@ -18,6 +18,15 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.green,
+          brightness: Brightness.dark,
+        ),
+        useMaterial3: true,
+      ),
+      themeMode: ThemeMode.dark,
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Dashboard Mahasiswa'),

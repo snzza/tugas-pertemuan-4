@@ -27,15 +27,32 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       themeMode: ThemeMode.dark,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Dashboard Mahasiswa'),
-        ),
-        body: const Center(
-          child: Text(
-            'Rico Adi Pratama',
-            style: TextStyle(fontSize: 20),
-          ),
+      home: const ProfilePage(),
+    );
+  }
+}
+
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Profil Mahasiswa'),
+      ),
+      body: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.person, size: 100),
+            SizedBox(height: 16),
+            Text(
+              'Rico Adi Pratama',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            Text('1124160054'),
+          ],
         ),
       ),
     );
